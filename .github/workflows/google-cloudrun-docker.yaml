@@ -39,7 +39,7 @@ env:
   PROJECT_ID: 'gcp-terraform-448612' # TODO: update to your Google Cloud project ID
   REGION: 'asia-northeast3' # TODO: update to your region
   SERVICE: 'gcp-terraform' # TODO: update to your service name
-  WORKLOAD_IDENTITY_PROVIDER: 'projects/1054716025289/locations/global/workloadIdentityPools/tle-github-actions/providers/github-actions' # TODO: update to your workload identity provider
+  WORKLOAD_IDENTITY_PROVIDER: 'projects/216240510646/locations/global/workloadIdentityPools/terraform-gcp/providers/terraform-gcp' # TODO: update to your workload identity provider
 
 jobs:
   deploy:
@@ -62,7 +62,7 @@ jobs:
         uses: 'google-github-actions/auth@f112390a2df9932162083945e46d439060d66ec2' # google-github-actions/auth@v2
         with:
           workload_identity_provider: '${{ env.WORKLOAD_IDENTITY_PROVIDER }}'
-          service_account: 'tle-admin@tle-project-438303.iam.gserviceaccount.com' # TODO: update to your service account email
+          service_account: 'gcp-terraform@gcp-terraform-448612.iam.gserviceaccount.com' # TODO: update to your service account email
 
       # Build application
       - name: Set up JDK 17
