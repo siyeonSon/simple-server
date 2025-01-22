@@ -39,7 +39,7 @@ env:
   PROJECT_ID: 'gcp-terraform-448612' # TODO: update to your Google Cloud project ID
   REGION: 'asia-northeast3' # TODO: update to your region
   SERVICE: 'tle-github-actions' # TODO: update to your service name
-  WORKLOAD_IDENTITY_PROVIDER: 'projects/216240510646/locations/global/workloadIdentityPools/tle-github-actions/providers/tle-github-actions' # TODO: update to your workload identity provider
+  WORKLOAD_IDENTITY_PROVIDER: 'projects/216240510646/locations/global/workloadIdentityPools/tle-github-actions' # TODO: update to your workload identity provider
 
 jobs:
   deploy:
